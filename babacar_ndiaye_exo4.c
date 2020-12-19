@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-// calcul la trace d un matrice
+// calcul la trace d'un matrice
 
 int main(int argc, char const *argv[])
 {
@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
   int result = 0;
   do
   {
-    printf("quel est la taille de votre matrice: ");
+    printf("quelle est la taille de votre matrice: ");
     scanf("%d", &taille);
   } while (taille <= 0);
   int **tab = malloc(sizeof(int*) * taille );
@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
       }
     }
   }
-     printf("%d",result);
+     printf(" la trace de vote matrice: %d",result);
   free(tab);
   return 0;
 }
