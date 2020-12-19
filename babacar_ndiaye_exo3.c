@@ -31,8 +31,10 @@ int main(int argc, char const *argv[])
       {
         if (min == fabs(tab[i]))
         {
-          if(tab[i] > 0)
-            a=i;
+          if (tab[i] > 0)
+          {
+            a = i;
+          }
         }
         else
         {
@@ -43,6 +45,6 @@ int main(int argc, char const *argv[])
     }
   }
 
-  printf(" la valeur la plus proche de 0 est: %lf", tab[a]);
+  printf("%lf", tab[a]);
   return 0;
 }
