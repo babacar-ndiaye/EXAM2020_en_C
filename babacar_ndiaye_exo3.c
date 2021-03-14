@@ -19,9 +19,10 @@ int main(int argc, char const *argv[])
   }
 
   if (tab == NULL)
-
-    printf("problem");
-
+  {
+   printf("allocation problen");
+   exit(-1);
+  }
   else
   {
     double min = fabs(tab[0]);
